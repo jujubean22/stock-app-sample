@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>StockAppSample</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Stock App Sample</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +11,13 @@
   </head>
 
   <body>
+    <%= render 'home/navbar'%>
+    <div class='container'>
+    </br>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
     <%= yield %>
+    </div>
+    <%= render 'home/footer'%>
   </body>
 </html>
